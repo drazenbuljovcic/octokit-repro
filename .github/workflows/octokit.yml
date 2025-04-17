@@ -14,10 +14,11 @@ jobs:
         with:
           node-version: 20
           cache: "npm"
+      - run: npm i -g tsx
       - name: Install dependencies
         # install dependencies
         run: npm install
       - name: Octokit
         # run octokit
         shell: bash
-        run: node index.js
+        run: tsx index.js

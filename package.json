@@ -5,6 +5,7 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
+    "start": "tsx index.js",
     "test": "vitest"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "jsdom": "^26.1.0",
+    "tsx": "^4.19.3",
     "vitest": "^3.1.1"
   }
 }
