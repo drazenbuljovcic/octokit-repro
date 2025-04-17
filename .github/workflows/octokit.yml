@@ -21,4 +21,4 @@ jobs:
       - name: Octokit
         # run octokit
         shell: bash
-        run: tsx index.js
+        run: tsx index.ts
