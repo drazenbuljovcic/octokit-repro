@@ -17,7 +17,7 @@ jobs:
       - run: npm i -g tsx
       - name: Install dependencies
         # install dependencies
-        run: npm install
+        run: npm i octokit@latest
       - name: Octokit
         # run octokit
         shell: bash
