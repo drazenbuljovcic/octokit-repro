@@ -1,7 +1,11 @@
 import { Octokit } from "octokit";
 
 const main = () => {
-  const octokit = new Octokit();
+  try {
+    const octokit = new Octokit();
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 main();

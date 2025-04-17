@@ -1,0 +1,23 @@
+on:
+  push:
+
+jobs:
+  octokit-repro:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout
+        # checkout code
+        uses: actions/checkout@v3
+      - name: Set up node
+        # set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+      - name: Install dependencies
+        # install dependencies
+        run: npm install
+      - name: Octokit
+        # run octokit
+        shell: bash
+        run: node index.js
