@@ -7,7 +7,7 @@ const main = () => {
     console.log(import.meta.url);
     console.log(import.meta.resolve);
 
-    console.error("Error resolving 'octokit':", error);
+    console.error("Error resolving 'octokit'");
 
     console.log(import.meta.resolve("octokit"));
     console.log(import.meta.resolve("octokit/index.js"));
