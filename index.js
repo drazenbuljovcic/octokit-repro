@@ -10,7 +10,7 @@ const main = () => {
     console.error("Error resolving 'octokit'");
 
     console.log(import.meta.resolve("octokit"));
-    console.log(import.meta.resolve("octokit/index.js"));
+    console.log(import.meta.resolve("octokit/main"));
   } catch (error) {
     console.error(error);
   }
